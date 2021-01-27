@@ -139,6 +139,11 @@ class Login extends Component {
                         Không có tài khoản đăng kí tại đây
                     </Link>
                 </Form>
+                <div>
+                    <Link to="/home">
+                        <img src="Image/backbutton.png" alt="" style={{ width: '5%', marginLeft:'300px' }} />
+                    </Link>
+                </div>
             </>
         );
     }

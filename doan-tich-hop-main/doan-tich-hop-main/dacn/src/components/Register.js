@@ -5,6 +5,7 @@ import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import Auth from "./service/Auth"
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 
 const required = value => {
     if (!value) {
@@ -156,6 +157,11 @@ class Register extends Component {
                         }}
                     />
                 </Form>
+                <div>
+                    <Link to="/home">
+                        <img src="Image/backbutton.png" style={{ width: '5%', marginLeft:'300px' }} />
+                    </Link>
+                </div>
             </>
         );
     }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 class MemoryBlock {
   constructor(id, frontImage, backImage) {
     this.id = id;
@@ -215,7 +216,10 @@ class FlipFlop1 extends Component {
   render() {
     return (
       <div id="flipflop">
-        <h1 className="game-title">Play-Game</h1>
+
+        <h1 className="game-title"><Link to="/chude1">
+          <img src="Image/backbutton.png" alt="" style={{ width: '4%', marginRight: '100px' }} />
+        </Link>Play-Game</h1>
         <div className="overlay-text visible">
           Click to Start
         </div>

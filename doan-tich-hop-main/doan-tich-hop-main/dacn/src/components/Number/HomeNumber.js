@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import "./2.css"
 import Question from "./Question";
 import Answer from "./Answer";
-
+import { Link } from 'react-router-dom';
 class HomeNumber extends Component {
     constructor(props) {
         super(props);
@@ -121,22 +121,24 @@ class HomeNumber extends Component {
     }
 
     win = () => {
-        this.setState({isWin: true})
+        this.setState({ isWin: true })
     }
 
     render() {
         return (
             <div id="numberplay">
                 <div>
-                    <h1 className="game-title">Play-Game</h1>
+                    <h1 className="game-title"><Link to="/chude3">
+                        <img src="/Image/backbutton.png" alt="" style={{ width: '4%', marginRight: '100px' }} />
+                    </Link>Play-Game</h1>
                 </div>
                 <div>
-                    <h1 className="win" style={{display: 'none', marginTop: '50px'}}>YOU ARE WINER</h1>
+                    <h1 className="win" style={{ display: 'none', marginTop: '50px' }}>YOU ARE WINER</h1>
                 </div>
                 <a id="again" onClick={() => this.again()}
-                   style={{display: 'none', marginTop: 50, cursor: 'pointer'}}>Again</a>
+                    style={{ display: 'none', marginTop: 50, cursor: 'pointer' }}>Again</a>
                 <a id="exit" onClick={() => this.exit()}
-                   style={{display: 'none', marginTop: 50, cursor: 'pointer'}}>Exit</a>
+                    style={{ display: 'none', marginTop: 50, cursor: 'pointer' }}>Exit</a>
 
                 {
                     !this.state.isWin && (
