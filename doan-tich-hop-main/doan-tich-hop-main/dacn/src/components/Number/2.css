@@ -1,0 +1,27 @@
+#numberplay{
+    background: url(back.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.game-title {
+    color: darkblue;
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 6em;
+}
+.win{
+    color: darkblue;
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 6em;
+}
+.number{
+    margin-left: 550px;
+    height: 80px;
+}

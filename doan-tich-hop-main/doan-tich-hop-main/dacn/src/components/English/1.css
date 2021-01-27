@@ -1,0 +1,55 @@
+#english{
+    background: url(./back.png);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.game-title {
+    color: darkblue;
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 6em;
+}
+#win{
+    color: darkblue;
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 6em;
+}
+#again{
+    color: darkblue;
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3em;
+}
+#exit{
+    color: darkblue;
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 3em;
+}
+.tu{
+    color: rgb(139, 0, 139);
+    font-family:'Tangerine', cursive;    
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+}
+.tu h1{
+    font-size: 63px;
+    font-weight: 600;
+}
+/* @keyframes n2{
+    from{transform: scale(0.5);}
+    to{transform: scale(1);}
+}
+.hinh:hover{
+    animation: n2 4s forwards;
+} */
